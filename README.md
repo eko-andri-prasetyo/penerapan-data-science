@@ -22,8 +22,8 @@ Jaya Jaya Maju adalah perusahaan multinasional (berdiri sejak 2000) dengan >1000
 ## Persiapan
 
 ### Sumber Data
-Dataset: `employee_data.csv` (dari Dicoding / GitHub Dicoding dataset employee).
-URL Dataset: https://github.com/dicodingacademy/dicoding_dataset/blob/main/employee/employee_data.csv
+- Dataset: `employee_data.csv` (dari Dicoding / GitHub Dicoding dataset employee).
+- URL Dataset: https://github.com/dicodingacademy/dicoding_dataset/blob/main/employee/employee_data.csv
 
 ### Setup Environment
 (Windows PowerShell):
