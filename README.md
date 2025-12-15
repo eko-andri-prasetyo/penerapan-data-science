@@ -15,7 +15,7 @@ Jaya Jaya Maju adalah perusahaan multinasional (berdiri sejak 2000) dengan >1000
 - Analisis deskriptif untuk mencari faktor risiko attrition.
 - Pembuatan database (SQLite) untuk BI tool.
 - Pembuatan **business dashboard** (Metabase).
-- *(Opsional untuk nilai tinggi)*: pembuatan model ML sederhana untuk prediksi risiko attrition + script prediksi.
+- *(Opsional)*: pembuatan model ML sederhana untuk prediksi risiko attrition + script prediksi.
 
 ---
 
@@ -25,7 +25,7 @@ Jaya Jaya Maju adalah perusahaan multinasional (berdiri sejak 2000) dengan >1000
 Dataset: `employee_data.csv` (dari Dicoding / GitHub Dicoding dataset employee).
 
 ### Setup Environment
-Contoh (Windows PowerShell):
+(Windows PowerShell):
 
 ```powershell
 python -m venv .venv
@@ -97,7 +97,7 @@ Berikut beberapa faktor dengan perbedaan attrition yang cukup menonjol:
 - Encoding:
   - One-hot encoding untuk fitur kategorikal
 
-Detail implementasi dapat dilihat pada `notebook_filled.ipynb`.
+Detail implementasi dapat dilihat pada `notebook.ipynb`.
 
 ---
 
@@ -161,8 +161,7 @@ Saat setup database di Metabase:
 ### Rekomendasi Isi Dashboard (minimal 1 dashboard, berisi visual)
 **KPI Cards**
 1. Attrition Rate (%)
-2. #Attrition (count)
-3. Headcount (count)
+
 
 **Charts**
 1. Attrition Rate by OverTime (bar)
@@ -170,7 +169,7 @@ Saat setup database di Metabase:
 3. Attrition Rate by Department (bar)
 4. Attrition Rate by JobRole (bar - top 10)
 5. Attrition Rate by AgeBand (bar)
-6. Attrition Rate by IncomeBand (bar)
+
 
 **Filter yang disarankan**
 - Department, JobRole, Gender, OverTime, BusinessTravel
@@ -183,7 +182,7 @@ docker cp metabase:/metabase.db/metabase.db.mv.db ./
 
 File yang wajib dilampirkan:
 - `metabase.db.mv.db`
-- Screenshot dashboard: `<username_dicoding>-dashboard.png` atau `.jpg`
+- Screenshot dashboard: `ekoandriprasetyo-dashboard.png` atau `.jpg`
 
 ---
 
@@ -220,16 +219,16 @@ Attrition rate pada data historis berlabel adalah **16.92%**, lebih tinggi dari 
 
 ---
 
-## Struktur Folder Submission (disarankan)
+## Struktur Folder Submission
 
 ```
 submission/
 ├── model/
 │   └── attrition_model.joblib
-├── notebook_filled.ipynb
+├── notebook.ipynb
 ├── prediction.py
 ├── README.md
-├── <username_dicoding>-dashboard.png
+├── ekoandriprasetyo-dashboard.png
 ├── metabase.db.mv.db
 ├── hr.db
 └── requirements.txt
